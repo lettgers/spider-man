@@ -31,6 +31,7 @@
         <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
         <hutool.version>5.4.1</hutool.version>
         <jacoco.version>0.8.3</jacoco.version>
+        <lombok.version>1.18.8</lombok.version>
         <!-- 打包跳过单元测试 -->
         <skipTests>true</skipTests>
     </properties>
@@ -58,6 +59,12 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <optional>true</optional>
             </dependency>
 
         </dependencies>
